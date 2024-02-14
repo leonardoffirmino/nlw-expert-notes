@@ -2,6 +2,10 @@ import logo from './assets/logo-nlw-expert.svg'
 import { NewNoteCard } from './components/new-note-card'
 import { NoteCard } from './components/note-card'
 
+const note = {
+  date: new Date(),
+  content: "Hello World"
+}
 
 export function App() {
   return (
@@ -23,12 +27,7 @@ export function App() {
 
         <NewNoteCard />
 
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-        <NoteCard />
-
+        <NoteCard note={note} />
 
       </div>
 
